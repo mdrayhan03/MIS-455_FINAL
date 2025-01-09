@@ -181,6 +181,11 @@ footer {
     align-items: center;
 }
 
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .logo h3, p{
