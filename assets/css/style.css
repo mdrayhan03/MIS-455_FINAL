@@ -96,7 +96,7 @@ header {
     margin-bottom: 20px;
     padding: 10px 0;
     color: green;
-    background-color: aquamarine;
+    background-color: rgba(127, 255, 212, 0.3);
     font-size: 18px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -114,22 +114,6 @@ header {
     align-items: center;
 }
 
-.design .ad .ad-close {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    visibility: hidden;
-}
-
-.design .ad .ad-close button {
-    padding: 5px 20px;
-    color: white;
-    background-color: rgb(45, 45, 194);
-    border: 0;
-}
-
 .design .ad .close-btn {
     position: absolute;
     top: 10px;
@@ -137,6 +121,7 @@ header {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     border: 0;
+    cursor: pointer;
 }
 
 .design .ad .close-btn:hover {
@@ -170,6 +155,32 @@ header {
     width: 100%;
 }
 
+.show-btn {
+    width: 100%;
+    padding: 20px 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;    
+}
+
+.show-btn .btn-text {
+    transition: 0.3s ease;
+}
+
+.show-btn i {
+    transition: 0.3s ease;
+}
+
+footer {
+    width: 100%;
+    padding: 20px 0px;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .logo h3, p{
@@ -178,6 +189,11 @@ header {
 
     .input-form input{
         width: 100px;
+    }
+
+    .design marquee {
+        font-size: 12px;
+        padding: 3px 0;
     }
 
     .output {
@@ -189,6 +205,11 @@ header {
 @media only screen and (min-width: 600px) {
     .input-form input{
         width: 100px;
+    }
+
+    .design marquee {
+        font-size: 14px;
+        padding: 5px 0;
     }
 
     .output {
@@ -206,6 +227,11 @@ header {
         width: 150px;
     }
 
+    .design marquee {
+        font-size: 16px;
+        padding: 7px 0;
+    }
+
     .output {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -217,6 +243,11 @@ header {
         width: 200px;
     }
 
+    .design marquee {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
     .output {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -226,6 +257,11 @@ header {
 @media only screen and (min-width: 1200px) {
     .input-form input{
         width: 400px;
+    }
+
+    .design marquee {
+        font-size: 18px;
+        padding: 10px 0;
     }
 
     .output {

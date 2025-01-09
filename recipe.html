@@ -11,8 +11,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/recipe.css">
     <link rel="shortcut icon" href="assets/media/logo.png" type="image/x-icon">
-    <title>Recipe Master</title>
+    <title>Recipe</title>
 </head>
 <body>
     <header>
@@ -21,25 +22,24 @@
             <h3>Recipe Master</h3>
             <p>Feel like home!</p>
         </div>
-        <div class="input-form">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" id="inp" placeholder="dish name...">
-            <button onclick="search()">Search</button>
+        <div class="buttons">
+            <button onclick="window.location.href = 'index.html'">Home</button>
         </div>
     </header>
+
     <div class="design">
         <marquee direction="right">Don’t just feed your hunger—enjoy a meal that nourishes your body and soul. Feel the warmth and comfort of home with every bite, bringing joy to your day.</marquee>
         <div class="ad">
             <button class="close-btn" onclick="adfunction()"><i class="fa-solid fa-xmark"></i></button>
         </div>
     </div>
-    <h1>Recipes</h1>
-    <div class="output"></div>
-    <button class="show-btn" onclick="showmorefunction()">Show <span class="btn-text">more</span> <i class="fa-solid fa-angles-down down"></i></button>
+
+    <div class="recipeoutput"></div>
+
     <footer>
         <span>Email: <a href="">recipemaster@gmail.com</a></span>
         <i>@Copyright2024</i>
     </footer>
 </body>
-<script src="assets/js/script.js"></script>
+<script src="assets/js/recipe.js"></script>
 </html>
